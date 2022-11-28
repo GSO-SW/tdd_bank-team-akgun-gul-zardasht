@@ -1,6 +1,6 @@
 using Bank;
 
-namespace KontoTest
+namespace BankTests
 {
     [TestClass]
     public class KontoTests
