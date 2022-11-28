@@ -9,14 +9,18 @@ namespace BankTests
         public void Einzahlen_SteigertGuthaben()
         {
             //Arrange
-            Konto k1 = new Konto(100);
+            int startguthaben = 100;
+            Konto k1 = new Konto(startguthaben);
+            int einzahlungsbetrag = 20;
+
+            int guthaben_soll = startguthaben + einzahlungsbetrag;
+
 
             //Act
-            int guthaben = 20;
-            guthaben = guthaben + k1.Guthaben;
-            k1.Einzahlen(20);
+            k1.Einzahlen(einzahlungsbetrag);
+            
             //Assert
-            Assert.AreEqual(k1.Guthaben, guthaben);
+            Assert.AreEqual(guthaben_soll, k1.Guthaben);
         }
     }
 }
