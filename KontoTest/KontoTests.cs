@@ -6,7 +6,7 @@ namespace BankTests
     public class KontoTests
     {
         [TestMethod]
-        public void Einzahlen()
+        public void Einzahlen_SteigertGuthaben()
         {
             //Arrange
             Konto k1 = new Konto(100);
