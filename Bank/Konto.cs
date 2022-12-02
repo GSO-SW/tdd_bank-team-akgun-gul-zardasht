@@ -28,14 +28,11 @@ namespace Bank
         public Konto(int guthaben)
         {
             this.guthaben = guthaben;
-<<<<<<< HEAD
-
-=======
             if (guthaben < 0)
             {
                 throw new ArgumentOutOfRangeException("Guthaben darf nicht im negativem Bereich liegen.");
             }
->>>>>>> Berkant_TDD_Test
+            kontonNr++;
         }
 
         public void Einzahlen(int betrag)
