@@ -6,6 +6,7 @@ namespace Bank
     {
 
         private int guthaben;
+        static int kontonNr;
 
         public int Guthaben
         {
@@ -15,6 +16,15 @@ namespace Bank
                 return guthaben;
             }
         }
+
+        public int KontoNr
+        {
+            get
+            {
+                return kontonNr;
+            }
+        }
+
 
         public Konto(int guthaben)
         {
