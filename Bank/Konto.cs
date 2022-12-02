@@ -17,6 +17,10 @@ namespace Bank
         public Konto(int guthaben)
         {
             this.guthaben = guthaben;
+            if (guthaben < 0)
+            {
+                throw new ArgumentOutOfRangeException("Guthaben darf nicht im negativem Bereich liegen.");
+            }
         }
 
         public void Einzahlen(int betrag)
