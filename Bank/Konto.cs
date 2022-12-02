@@ -10,7 +10,6 @@ namespace Bank
 
         public int Guthaben
         {
-            private set { value = kontoNr; }
             get
             {
                 return guthaben;
@@ -29,6 +28,7 @@ namespace Bank
         public Konto(int guthaben)
         {
             this.guthaben = guthaben;
+
         }
 
         public void Einzahlen(int betrag)
