@@ -14,6 +14,8 @@ namespace BankTests
             int guthaben = -1;
             // Act
             Konto k = new Konto(guthaben);
+            // Arrange
+            
         }
 
         [TestMethod]
@@ -56,22 +58,6 @@ namespace BankTests
             //Assert
             Assert.AreEqual(startwert, k1.Guthaben);
         }
-
-
-        //Hier sind wir stehen geblieben
-        [TestMethod]
-        public void Konto_Negativ_StartwertWirdInGuthabenEingetragen()
-        {
-            //Arrange
-            int startwert = -50;
-
-            //Act
-            Konto k1 = new Konto(startwert);
-
-            //Assert
-            Assert.AreEqual(startwert, k1.Guthaben);
-        }
-
 
         [TestMethod]
         public void Einzahlen_SteigertGuthaben()
