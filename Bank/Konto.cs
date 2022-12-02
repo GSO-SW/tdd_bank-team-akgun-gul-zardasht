@@ -4,10 +4,12 @@ namespace Bank
 {
     public class Konto
     {
+
         private int guthaben;
 
         public int Guthaben
         {
+            private set { value = kontoNr; }
             get
             {
                 return guthaben;
